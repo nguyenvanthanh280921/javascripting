@@ -1,6 +1,6 @@
 # Introduction
 
-**JavaScript** là một ngôn ngữ lập trình biên dịch, sử dụng trên đa nền tảng và được thông dịch, còn được gọi là ngôn ngữ kịch bản cho các trang web. Javascript được dùng trong trang web bên cạnh HTML và CSS. JavaScript có thể được sử dụng cho các phát triển phía Client cũng như các phát triển phía Server. Javascript vừa là loại ngôn ngữ mệnh lệnh vừa là ngôn ngữ khai báo. JavaScript chứa một thư viện tiêu chuẩn của các đối tượng, như Mảng , Ngày tháng và Toán học , và một tập hợp cốt lõi của các phần tử ngôn ngữ như toán tử , cấu trúc điều khiển và câu lệnh . 
+**JavaScript** là một ngôn ngữ lập trình biên dịch, sử dụng trên đa nền tảng và được thông dịch, còn được gọi là ngôn ngữ kịch bản cho các trang web. Javascript được dùng trong trang web bên cạnh HTML và CSS. JavaScript có thể được sử dụng cho các phát triển phía Client cũng như các phát triển phía Server. Javascript vừa là loại ngôn ngữ mệnh lệnh vừa là ngôn ngữ khai báo. JavaScript chứa một thư viện tiêu chuẩn của các đối tượng, như Mảng , Ngày tháng và Toán học , và một tập hợp cốt lõi của các phần tử ngôn ngữ như toán tử , cấu trúc điều khiển và câu lệnh. 
 
 # Valiable
 
@@ -18,8 +18,8 @@
 - Kiểm tra chuỗi có bao nhiêu ký tự sử dụng thuộc tính **length()**.
 - Cú pháp 
 ```js
-const example = 'this is a string'
-console.log(example.length)
+const example = 'this is a string';
+console.log(example.length);
 // kết quả trả về sẽ là độ dài kỹ tự của string
 ```
 # Revising String
@@ -28,9 +28,9 @@ console.log(example.length)
 - Đôi khi chúng ta cần thay đổi các nội dung của một chuỗi, vậy để thay đổi nội dung trong một chuỗi thì ta sử dụng phương thức **replace()**
 - Cú pháp 
 ```js
-let example = 'example string'
-example = example.replace('string','this is a string')
-console.log(example)
+let example = 'example string';
+example = example.replace('string','this is a string');
+console.log(example);
 // kết quả trả về sẽ là 'example this is a string'
 ```
 # Number
@@ -41,7 +41,7 @@ console.log(example)
 # Rounding Number
 
 - Chúng ta có thể làm các phép toán cơ bản bằng cách sử dụng các toán tử +, -, *, / và %.
-- Nhưng đối với các phép toán phức tạp hơn, chúng ta có thể sử dụng đối tượng **Math**
+- Nhưng đối với các phép toán phức tạp hơn, chúng ta có thể sử dụng đối tượng **Math**.
 - Dùng **Math** để làm tròn số
 ```js
 const roundUp = 1.5;
@@ -68,9 +68,9 @@ console.log(str);
 - Một câu lệnh điều kiện có dạng như sau
 ```js
 if(n> 1) {
-    console.log ('biến n lớn hơn 1.')
+    console.log ('biến n lớn hơn 1.');
 }else {
-    console.log ('biến n nhỏ hơn hoặc bằng 1.')
+    console.log ('biến n nhỏ hơn hoặc bằng 1.');
     }
 // (n>1): Bên trong dấu ngoặc là kết quả của lệnh sẽ là đúng hoặc sai 
 // else: là lệnh tùy chọn và chứa mã sẽ được thực thi nếu kết quả đó là sai 
@@ -95,6 +95,7 @@ for(let i = 0; i < n; i++){
 // []
 const array_name = [item1, item2, ...]; 
 ```
+*hoặc*
 ```js
 // new Array()
 const array_name = new Array(item1, item2, ...); 
@@ -184,6 +185,15 @@ console.log(keys);
 # Functions
 
 - **Functions** là một khối nhận đầu vào, xử lý đầu vào đó và sau đó sản xuất đầu ra. 
+- Ví dụ
+```js
+function eat (food){
+    return food + 'tasted really good.';
+}
+console.log(eat('Bananas '))
+//xác định một hàm có tên là eat nhận đối số có tên food được mong đợi là một chuỗi 'Bananas'
+// => Bananas tasted really good.
+```
 
 # Function Arguments
 
@@ -210,8 +220,8 @@ console.log(math(53,61,67))
 const a = 4 // a là một biến toàn cục, nó có thể được truy cập bằng các hàm bên dưới
 
 function foo () {
-const b = a * 3 // b không thể được truy cập bên ngoài hàm foo, nhưng có thể được truy cập bởi các hàm
-// được định nghĩa bên trong foo
+const b = a * 3 // b không thể được truy cập bên ngoài hàm foo, nhưng có thể được truy cập bởi các hàm được định nghĩa bên trong foo
+
 function bar (c) {
     const b = 2 // một biến `b` khác được tạo bên trong phạm vi hàm bar
     // các thay đổi đối với biến `b` mới này không ảnh hưởng đến biến` b` cũ
