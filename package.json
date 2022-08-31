@@ -1,0 +1,15 @@
+{
+  "name": "javascripting",
+  "version": "1.0.0",
+  "description": "learning javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "learning",
+    "nodejs"
+  ],
+  "author": "ThanhNV",
+  "license": "MIT"
+}
